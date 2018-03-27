@@ -1,8 +1,10 @@
 //This is an Intro to basic routing with Node.js/Express
 // Sources: https://expressjs.com/en/guide/routing.html
 
-var express = require('express')
-var app = express()
+const express = require('express')
+const app = express()
+var birds = require('./birds')
+app.use('/birds', birds)
 
 //Midleware, Executes whenever the app recieves a request
 app.use(function(req, resp, next){
@@ -59,6 +61,15 @@ app.get('/callbackfunc', [cbfunc1, cbfunc2], function(req, resp, next){
 }, function (req, resp){
   resp.send('Hello from D!')
 })
+
+//Chained Route Handlers
+app.route('/chained')
+  .get(function(req, res){
+    res.send('GET chained')
+  })
+  .post(function(req, res){
+    res.send('POST chained')
+  })
 
 app.listen(1337, function(){
     console.log('App listening on port 1337!')

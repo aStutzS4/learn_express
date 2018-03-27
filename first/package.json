@@ -1,0 +1,27 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "\"This project is my first created through cmd line\" ",
+  "main": "Server.js",
+  "scripts": {
+    "test": "test",
+    "start intro": "node examples/intro_to_routing.js",
+    "start exp routers": "node examples/express_routing.js"
+  },
+  "keywords": [
+    "nodejs",
+    "best",
+    "practice"
+  ],
+  "author": "Austin Stutzman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "like": "^0.3.0",
+    "module_name": "^1.0.0",
+    "res-json": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.5"
+  }
+}

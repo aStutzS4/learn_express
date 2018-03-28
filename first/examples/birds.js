@@ -1,3 +1,8 @@
+/*
+Example of the express.Router class
+This is used to create mountable and modular route handlers
+*/
+
 var express = require('express')
 var router = express.Router()
 

@@ -12,5 +12,5 @@ I hope to learn as much Node.JS as I can while learning Express at the same time
 with which I can begin to create API's for web applications and/or mobile apps.
 
 Other info:
-- This is my first experiance with javascript/nodejs
+- This is my first experience with javascript/nodejs
 - Putting this on Github is just an excuse to get familiar with using github

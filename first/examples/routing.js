@@ -5,6 +5,7 @@ const express = require('express')
 const app = express()
 var birds = require('./birds')
 app.use('/birds', birds)
+app.set('view engine', 'pug') //Set default view engine and directory
 
 //Midleware, Executes whenever the app recieves a request
 app.use(function(req, resp, next){
@@ -70,6 +71,10 @@ app.route('/chained')
   .post(function(req, res){
     res.send('POST chained')
   })
+
+app.get('/renderindex', (req, res) =>{
+  res.render('../views/index', {title : 'Hey', message : 'Hello My Dude!'})
+})
 
 app.listen(1337, function(){
     console.log('App listening on port 1337!')

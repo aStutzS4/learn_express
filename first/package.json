@@ -19,6 +19,8 @@
     "express": "^4.16.3",
     "like": "^0.3.0",
     "module_name": "^1.0.0",
+    "npm": "^5.8.0",
+    "pug": "^2.0.3",
     "res-json": "^1.0.1"
   },
   "devDependencies": {
